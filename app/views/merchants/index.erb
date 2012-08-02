@@ -1,0 +1,7 @@
+<h1>Welcome to YooBe</h1>
+
+Check some of our merchants
+
+<% @merchants.each do |merchant| %>
+  <a href="/merchants/<%= merchant.id%>"><%= merchant.name%></a>
+<% end %>
